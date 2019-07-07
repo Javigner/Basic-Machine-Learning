@@ -22,6 +22,8 @@ plt.xlabel('Nombre de clusters')
 plt.ylabel('WCSS')
 plt.show()
 
+# Nombre de cluster optimal : 5
+
 # Construction du modèle
 from sklearn.cluster import KMeans
 kmeans = KMeans(n_clusters = 5, init = 'k-means++', random_state = 0)
